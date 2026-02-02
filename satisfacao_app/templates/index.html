@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback de Satisfação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="fullscreen">
+    <div class="container">
+        <h1>Como se sente com o nosso serviço?</h1>
+        <div class="buttons">
+            <button class="btn btn-good" data-satisfaction="muito_satisfeito">Muito satisfeito</button>
+            <button class="btn btn-neutral" data-satisfaction="satisfeito">Satisfeito</button>
+            <button class="btn btn-bad" data-satisfaction="insatisfeito">Insatisfeito</button>
+        </div>
+        <div id="feedback-message" class="hidden">Obrigado pelo seu feedback!</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
